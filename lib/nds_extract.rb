@@ -1,4 +1,5 @@
 require 'directors_database'
+require 'pp'
 
 # Write a method that, given an NDS creates a new Hash
 # The return value should be like:
@@ -14,3 +15,5 @@ end
 # using director_data as input
 def gross_for_director(director_data)
 end
+
+pp directors_database
