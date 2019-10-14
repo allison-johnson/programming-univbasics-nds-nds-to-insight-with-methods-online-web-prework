@@ -19,7 +19,11 @@ end #method directors_totals
 # using director_data as input
 def gross_for_director(director_data)
   total = 0
-  
+  all_movies = director_data[:movies]
+  all_movies.each do |movie|
+    total += movie[:worldwide_gross]
+  end #each
+  total
 end
 
 #pp directors_database
